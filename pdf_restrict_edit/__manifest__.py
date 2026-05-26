@@ -4,6 +4,8 @@
     'category': 'Technical',
     'summary': 'Protect PDF reports from editing (no password on open)',
     'depends': ['base'],
+    'price': 9.99,
+    'currency': 'EUR',
     'data': [
         'security/ir.model.access.csv',
         'views/pdf_settings_view.xml',
