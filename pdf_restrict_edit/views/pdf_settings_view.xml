@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="pdf_settings_form_view" model="ir.ui.view">
+        <field name="name">pdf.settings.form</field>
+        <field name="model">pdf.settings</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>PDF Protection Settings</h1>
+                    </div>
+                    <group>
+                        <field name="password" placeholder="Enter master password"/>
+                        <field name="is_password_set" invisible="1"/>
+                        <div class="alert alert-info" role="alert">
+                            <i class="fa fa-info-circle"/> Password field is empty for security reasons. If you have previously set a password, it will remain active unless you change it here.
+                        </div>
+                    </group>
+                    <footer>
+                        <button name="action_save" string="Save" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_pdf_settings" model="ir.actions.act_window">
+        <field name="name">PDF Security Settings</field>
+        <field name="res_model">pdf.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_pdf_settings_root"
+              name="PDF Security"
+              parent="base.menu_administration"
+              action="action_pdf_settings"
+              sequence="10"/>
+</odoo>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PDF Restrict Edit - Odoo Module</title>
+</head>
+<body>
+    <h1>PDF Restrict Edit</h1>
+    <p>This module adds password protection to generated PDF reports (invoices, quotations, delivery slips) without requiring a password to open the document. It prevents editing, copying content, and other modifications.</p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Automatically encrypts all PDF reports.</li>
+        <li>No password required to open the PDF.</li>
+        <li>Editing, copying, and assembling are prohibited.</li>
+        <li>Configurable master password via menu: Settings → PDF Security.</li>
+        <li>If no master password is set, a random password is generated for each PDF.</li>
+    </ul>
+
+    <h2>Usage</h2>
+    <ol>
+        <li>Go to <strong>Settings → PDF Security</strong>.</li>
+        <li>Enter your master password and save.</li>
+        <li>Print any invoice, quotation, or delivery slip – the generated PDF will be protected.</li>
+    </ol>
+
+    <h2>Technical details</h2>
+    <p>Uses pypdf (or PyPDF2) to encrypt PDFs with AES-128. Permissions: only low-resolution printing allowed.</p>
+
+    <h2>Support</h2>
+    <p>For issues or questions, contact: yogannnn@gmail.com</p>
+</body>
+</html>
