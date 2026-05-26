@@ -98,6 +98,6 @@ This module is released under the LGPL-3 license. You are free to use, modify, a
 Support
 
 For bug reports or feature requests, please open an issue on GitHub Issues (https://github.com/yogannnn/pdf_restrict_edit/issues).
-For commercial support, contact: support@yourdomain.com
+For commercial support, contact: yogannnn@gmail.com
 
 Happy securing your PDFs!
