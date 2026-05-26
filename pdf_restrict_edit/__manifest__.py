@@ -5,6 +5,7 @@
     'summary': 'Protect PDF reports from editing (no password on open)',
     'depends': ['base'],
     'author': 'Servertronix',      # ← ваше имя или название компании
+    'website': 'https://github.com/yogannnn',  # ← опциональная ссылка на профиль/сайт
     'data': [
         'security/ir.model.access.csv',
         'views/pdf_settings_view.xml',
