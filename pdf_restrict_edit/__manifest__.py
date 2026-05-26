@@ -4,8 +4,6 @@
     'category': 'Technical',
     'summary': 'Protect PDF reports from editing (no password on open)',
     'depends': ['base'],
-    'price': 9.99,
-    'currency': 'EUR',
     'author': 'Servertronix',      # ← ваше имя или название компании
     'data': [
         'security/ir.model.access.csv',
